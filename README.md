@@ -1,6 +1,6 @@
 # ChatGPT Auto Confirm ⚡
 
-一个轻量级 Chrome/Edge 扩展，用于在 ChatGPT 网页中自动确认符合规则的 GitHub 工具弹窗。
+一个轻量级 Chrome/Edge 扩展，用于在 ChatGPT 网页中自动确认符合规则的工具弹窗。
 
 ---
 
