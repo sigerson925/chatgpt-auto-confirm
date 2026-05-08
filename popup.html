@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ChatGPT Auto Confirm</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <main class="panel">
+    <header class="header">
+      <div>
+        <h1>Auto Confirm</h1>
+        <p>ChatGPT GitHub 确认弹窗</p>
+      </div>
+      <label class="switch" title="控制插件开关">
+        <input id="enabled" type="checkbox" />
+        <span class="slider"></span>
+      </label>
+    </header>
+
+    <section class="section">
+      <div class="section-title">
+        <h2>确认前必须匹配的字段</h2>
+        <span id="count" class="badge">0</span>
+      </div>
+      <p class="hint">只有弹窗文本同时包含下列全部字段时，插件才会点击“确认”。</p>
+
+      <form id="add-form" class="add-row">
+        <input id="field-input" type="text" placeholder="输入匹配字段，例如仓库名或分支名" autocomplete="off" />
+        <button type="submit">新增</button>
+      </form>
+
+      <ul id="field-list" class="field-list"></ul>
+    </section>
+
+    <footer class="footer">
+      <button id="reset" type="button" class="link-button">恢复默认字段</button>
+      <span id="status" role="status"></span>
+    </footer>
+  </main>
+
+  <script src="popup.js"></script>
+</body>
+</html>
